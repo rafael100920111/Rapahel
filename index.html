@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluxo Roleplay</title>
+    <link rel="icon" type="image/webp" href="https://media.discordapp.net/attachments/1382206014744563714/1384002623241453578/Inserir_um_subtitulo.png?ex=6850d862&is=684f86e2&hm=59837de6b203578a29a6ba3aa9c2bad466b72d4fa47f0ec0fdde32efe2429cd6&=&format=webp&quality=lossless" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="src/css/style.css" />
+    <script src="src/js/script.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-dark-secondary border-b border-purple-primary/30 px-4 py-3 fixed w-full z-10">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <h1 class="text-xl md:text-2xl font-bold text-white">
+                    <span class="text-purple-primary glow">Fluxo</span> Roleplay
+                </h1>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#home" class="text-gray-300 hover:text-purple-primary transition-colors">Início</a>
+                <a href="#about" class="text-gray-300 hover:text-purple-primary transition-colors">Sobre</a>
+                <a href="#connect" class="text-gray-300 hover:text-purple-primary transition-colors">Conectar</a>
+                <a href="#discord" class="text-gray-300 hover:text-purple-primary transition-colors">Discord</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-white focus:outline-none">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed inset-0 bg-dark-bg z-20 flex flex-col items-center justify-center transform translate-x-full transition-transform duration-300 ease-in-out">
+        <button id="close-menu" class="absolute top-4 right-4 text-white text-2xl">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="flex flex-col space-y-6 text-center">
+            <a href="#home" class="text-xl text-gray-300 hover:text-purple-primary transition-colors">Início</a>
+            <a href="#about" class="text-xl text-gray-300 hover:text-purple-primary transition-colors">Sobre</a>
+            <a href="#connect" class="text-xl text-gray-300 hover:text-purple-primary transition-colors">Conectar</a>
+            <a href="#discord" class="text-xl text-gray-300 hover:text-purple-primary transition-colors">Discord</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section min-h-screen flex items-center pt-16">
+        <div class="container mx-auto px-4 py-16">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4">
+                        <span class="text-purple-primary glow">Fluxo</span> Roleplay
+                    </h1>
+                    <p class="text-xl text-gray-300 mb-8">A melhor experiência de GTA Online/SAMP que você vai encontrar!</p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="bg-dark-secondary border border-purple-primary/50 rounded-lg px-6 py-4 flex items-center">
+                            <div class="mr-4">
+                                <i class="fas fa-server text-purple-primary text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-sm text-gray-400">IP do Servidor</h3>
+                                <p class="text-lg font-semibold">Desenvolvimento</p>
+                            </div>
+                        </div>
+                        <div class="bg-dark-secondary border border-purple-primary/50 rounded-lg px-6 py-4 flex items-center">
+                            <div class="mr-4">
+                                <i class="fas fa-code-branch text-purple-primary text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-sm text-gray-400">Status</h3>
+                                <p class="text-lg font-semibold flex items-center">
+                                    <span class="w-3 h-3 bg-green-400 rounded-full mr-2 status-badge"></span>
+                                    Desenvolvendo
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <a href="#discord" class="discord-btn inline-block px-8 py-3 rounded-full text-white font-medium transition-all duration-300 btn-hover">
+                            <i class="fab fa-discord mr-2"></i> Entrar no Discord
+                        </a>
+                    </div>
+                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-dark-secondary py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Sobre o <span class="text-purple-primary">Servidor</span></h2>
+                <div class="w-24 h-1 bg-purple-primary mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-dark-bg p-6 rounded-lg border border-purple-primary/30 hover:border-purple-primary/70 transition-all duration-300">
+                    <div class="w-16 h-16 bg-purple-primary/20 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-gamepad text-purple-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-center">Experiência Imersiva</h3>
+                    <p class="text-gray-400 text-center">Um mundo aberto com histórias envolventes e personagens únicos para você interpretar.</p>
+                </div>
+                <div class="bg-dark-bg p-6 rounded-lg border border-purple-primary/30 hover:border-purple-primary/70 transition-all duration-300">
+                    <div class="w-16 h-16 bg-purple-primary/20 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-users text-purple-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-center">Comunidade Ativa</h3>
+                    <p class="text-gray-400 text-center">Junte-se a uma comunidade apaixonada por roleplay e faça parte desta história.</p>
+                </div>
+                <div class="bg-dark-bg p-6 rounded-lg border border-purple-primary/30 hover:border-purple-primary/70 transition-all duration-300">
+                    <div class="w-16 h-16 bg-purple-primary/20 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-code text-purple-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-center">Scripts Exclusivos</h3>
+                    <p class="text-gray-400 text-center">Recursos personalizados que tornam a experiência de jogo única e divertida.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Connect Section -->
+    <section id="connect" class="py-20 bg-dark-bg">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Como <span class="text-purple-primary">Conectar</span></h2>
+                <div class="w-24 h-1 bg-purple-primary mx-auto"></div>
+            </div>
+            <div class="max-w-3xl mx-auto bg-dark-secondary rounded-lg p-8 border border-purple-primary/30">
+                <div class="flex flex-col md:flex-row items-center mb-8">
+                    <div class="bg-purple-primary/20 p-4 rounded-full mb-4 md:mb-0 md:mr-6">
+                        <i class="fas fa-download text-purple-primary text-3xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2">1. Baixe o GTA San Andreas</h3>
+                        <p class="text-gray-400">Certifique-se de ter o GTA San Andreas instalado em seu computador.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row items-center mb-8">
+                    <div class="bg-purple-primary/20 p-4 rounded-full mb-4 md:mb-0 md:mr-6">
+                        <i class="fas fa-plug text-purple-primary text-3xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2">2. Instale o SA-MP</h3>
+                        <p class="text-gray-400">Baixe e instale o cliente SA-MP mais recente compatível.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="bg-purple-primary/20 p-4 rounded-full mb-4 md:mb-0 md:mr-6">
+                        <i class="fas fa-server text-purple-primary text-3xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2">3. Conecte ao Servidor</h3>
+                        <p class="text-gray-400">Pegue o nosso IP acima do site ou no nosso discord e entre.</p>
+                    </div>
+                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Discord Section -->
+    <section id="discord" class="py-20 bg-[#5865F2]/10">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Junte-se ao nosso <span class="text-[#5865F2]">Discord</span></h2>
+                <div class="w-24 h-1 bg-[#5865F2] mx-auto"></div>
+            </div>
+            <div class="max-w-4xl mx-auto bg-dark-secondary rounded-lg overflow-hidden shadow-2xl border border-[#5865F2]/30">
+                <div class="p-8 md:p-12">
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 mb-8 md:mb-0">
+                            <i class="fab fa-discord text-[#5865F2] text-7xl mb-6"></i>
+                            <h3 class="text-2xl font-bold mb-4">Comunidade Fluxo Roleplay</h3>
+                            <p class="text-gray-400 mb-6">Fique por dentro de todas as novidades, participe de eventos exclusivos e conheça outros jogadores!</p>
+                            <a href="https://discord.gg/XJGQy93wnQ" class="discord-btn inline-block px-8 py-3 rounded-full text-white font-medium transition-all duration-300 btn-hover">
+                                <i class="fab fa-discord mr-2"></i> Entrar no Discord
+                            </a>
+                        </div>
+                        <div class="md:w-1/2 md:pl-8">
+                        <div class="bg-dark-bg rounded-lg p-6 border border-gray-700">
+    
+                    <div class="flex items-center mb-4">
+                    <div class="w-10 h-10 bg-[#5865F2] rounded-full flex items-center justify-center mr-3">
+                        <i class="fab fa-discord text-white"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold">Fluxo Roleplay</h4>
+                        <p class="text-sm text-gray-400">Servidor Oficial</p>
+                    </div>
+                    </div>
+                    
+                    <div class="space-y-3">
+                    <div class="flex items-center text-gray-400">
+                        <i class="fas fa-users mr-3 text-[#5865F2]"></i>
+                        <span>Membros online</span>
+                    </div>
+                    
+                    <div class="flex items-center text-gray-400">
+                        <i class="fas fa-volume-up mr-3 text-[#5865F2]"></i>
+                        <span>Canais de voz</span>
+                    </div>
+                    
+                    <div class="flex items-center text-gray-400">
+                        <i class="fas fa-hashtag mr-3 text-[#5865F2]"></i>
+                        <span>Canais de texto</span>
+                    </div>
+                    
+                    <div class="flex items-center text-gray-400">
+                        <i class="fas fa-headset mr-3 text-[#5865F2]"></i>
+                        <span>Suporte 24/7</span>
+                    </div>
+                    
+                    <div class="flex items-center text-gray-400">
+                        <i class="fas fa-bell mr-3 text-[#5865F2]"></i>
+                        <span>Notificações de eventos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-secondary py-10 border-t border-purple-primary/30">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h2 class="text-2xl font-bold">
+                        <span class="text-purple-primary">Fluxo</span> Roleplay
+                    </h2>
+                    <p class="text-gray-400 mt-2">© 2025 Todos os direitos reservados</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#discord" class="w-10 h-10 bg-dark-bg rounded-full flex items-center justify-center border border-purple-primary/50 hover:bg-purple-primary/20 transition-colors">
+                        <i class="fab fa-discord text-white"></i>
+                    </a>
+                    <a href="https://www.instagram.com/fluxoroleplay.ofc?igsh=aWFtcTdqZG9tajBh" class="w-10 h-10 bg-dark-bg rounded-full flex items-center justify-center border border-purple-primary/50 hover:bg-purple-primary/20 transition-colors">
+                        <i class="fab fa-instagram text-white"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@FLUXOROLEPLAYOFICIALL" class="w-10 h-10 bg-dark-bg rounded-full flex items-center justify-center border border-purple-primary/50 hover:bg-purple-primary/20 transition-colors">
+                        <i class="fab fa-youtube text-white"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@fluxoroleplay7?_t=ZM-8yaRcY6ODcz&_r=1" class="w-10 h-10 bg-dark-bg rounded-full flex items-center justify-center border border-purple-primary/50 hover:bg-purple-primary/20 transition-colors">
+                        <i class="fab fa-tiktok text-white"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@drogbaedits10?_t=ZM-8zNUz7h2EKe&_r=1" target="_blank" class="w-auto px-4 py-2 bg-dark-bg rounded-full flex items-center justify-center border border-purple-primary/50 hover:bg-purple-primary/20 transition-colors">
+                        <i class="fab fa-tiktok text-white mr-2"></i>
+                        <span class="text-white">Feito por GR1M3S</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</html>
